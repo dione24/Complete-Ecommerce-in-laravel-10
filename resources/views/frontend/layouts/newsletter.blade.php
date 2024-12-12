@@ -1,24 +1,24 @@
-
-<!-- Start Shop Newsletter  -->
+<!-- Début Newsletter Boutique -->
 <section class="shop-newsletter section">
     <div class="container">
         <div class="inner-top">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 col-12">
-                    <!-- Start Newsletter Inner -->
+                    <!-- Début Contenu Newsletter -->
                     <div class="inner">
                         <h4>Newsletter</h4>
-                        <p> Subscribe to our newsletter and get <span>10%</span> off your first purchase</p>
+                        <p> Abonnez-vous à notre newsletter et obtenez <span>10%</span> de réduction sur votre premier
+                            achat</p>
                         <form action="{{route('subscribe')}}" method="post" class="newsletter-inner">
                             @csrf
-                            <input name="email" placeholder="Your email address" required="" type="email">
-                            <button class="btn" type="submit">Subscribe</button>
+                            <input name="email" placeholder="Votre adresse email" required="" type="email">
+                            <button class="btn" type="submit">S'abonner</button>
                         </form>
                     </div>
-                    <!-- End Newsletter Inner -->
+                    <!-- Fin Contenu Newsletter -->
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- End Shop Newsletter -->
+<!-- Fin Newsletter Boutique -->
