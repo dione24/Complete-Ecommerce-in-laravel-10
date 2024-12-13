@@ -76,7 +76,7 @@
                     <div class="col-lg-6 col-12">
                         <div class="left">
                             <p>Droits d'auteur © {{date('Y')}} <a href="https://github.com/Prajwal100"
-                                    target="_blank">Prajwal Rai</a> - Tous droits réservés.</p>
+                                    target="_blank">MD-SHOP</a> - Tous droits réservés.</p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-12">
