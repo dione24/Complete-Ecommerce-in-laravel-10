@@ -22,8 +22,9 @@
                     <!-- Top Right -->
                     <div class="right-content">
                         <ul class="list-main">
-                            <li><i class="ti-location-pin"></i> <a href="{{route('order.track')}}">Suivre la
-                                    commande</a></li>
+                            <li><i class="ti-location-pin"></i> <a href="{{route('order.track')}}">
+                                    Suivre une Commande
+                                </a></li>
                             {{-- <li><i class="ti-alarm-clock"></i> <a href="#">Offre du jour</a></li> --}}
                             @auth
                             @if(Auth::user()->role=='admin')

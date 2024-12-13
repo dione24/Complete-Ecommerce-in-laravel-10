@@ -1,5 +1,5 @@
 @extends('frontend.layouts.master')
-@section('title','E-SHOP || HOME PAGE')
+@section('title','MD-SHOP || HOME PAGE')
 @section('main-content')
 <!-- Slider Area -->
 @if(count($banners)>0)
@@ -17,19 +17,19 @@
             <div class="carousel-caption d-none d-md-block text-left">
                 <h1 class="wow fadeInDown">{{$banner->title}}</h1>
                 <p>{!! html_entity_decode($banner->description) !!}</p>
-                <a class="btn btn-lg ws-btn wow fadeInUpBig" href="{{route('product-grids')}}" role="button">Shop Now<i
-                        class="far fa-arrow-alt-circle-right"></i></i></a>
+                <a class="btn btn-lg ws-btn wow fadeInUpBig" href="{{route('product-grids')}}" role="button">Acheter
+                    maintenant<i class="far fa-arrow-alt-circle-right"></i></i></a>
             </div>
         </div>
         @endforeach
     </div>
     <a class="carousel-control-prev" href="#Gslider" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
+        <span class="sr-only">Précédent</span>
     </a>
     <a class="carousel-control-next" href="#Gslider" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
+        <span class="sr-only">Suivant</span>
     </a>
 </section>
 @endif
@@ -56,7 +56,7 @@
                     @endif
                     <div class="content">
                         <h3>{{$cat->title}}</h3>
-                        <a href="{{route('product-cat',$cat->slug)}}">Discover Now</a>
+                        <a href="{{route('product-cat',$cat->slug)}}">Découvrir maintenant</a>
                     </div>
                 </div>
             </div>
@@ -119,7 +119,7 @@
                                         <img class="hover-img" src="{{$photo[0]}}" alt="{{$photo[0]}}">
                                         @if($product->stock<=0) <span class="out-of-stock">Sale out</span>
                                             @elseif($product->condition=='new')
-                                            <span class="new">New</span @elseif($product->condition=='hot')
+                                            <span class="new">Nouveau</span @elseif($product->condition=='hot')
                                             <span class="hot">Hot</span>
                                             @else
                                             <span class="price-dec">{{$product->discount}}% Off</span>
